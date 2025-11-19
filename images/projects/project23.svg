@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#253a5f"/>
+  <g stroke="#38bdf8" stroke-width="2" fill="none">
+    <!-- Roof trusses -->
+    <polygon points="60,140 150,80 240,140"/>
+    <line x1="60" y1="140" x2="60" y2="160"/>
+    <line x1="240" y1="140" x2="240" y2="160"/>
+    <line x1="150" y1="80" x2="150" y2="160"/>
+    <line x1="90" y1="140" x2="90" y2="120"/>
+    <line x1="210" y1="140" x2="210" y2="120"/>
+    <line x1="120" y1="110" x2="180" y2="110"/>
+    <line x1="100" y1="125" x2="200" y2="125"/>
+    <!-- Truss details -->
+    <line x1="120" y1="110" x2="150" y2="80"/>
+    <line x1="180" y1="110" x2="150" y2="80"/>
+    <line x1="100" y1="125" x2="150" y2="80"/>
+    <line x1="200" y1="125" x2="150" y2="80"/>
+  </g>
+  <text x="150" y="190" font-family="Arial" font-size="12" fill="#78909c" text-anchor="middle">Roof Trusses</text>
+</svg>

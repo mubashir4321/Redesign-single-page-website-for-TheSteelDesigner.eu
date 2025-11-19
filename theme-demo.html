@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Demo - TheSteelDesigner.eu</title>
+  <link rel="stylesheet" href="css/modern-steel.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .theme-demo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    
+    .theme-panel {
+      border-radius: 15px;
+      padding: 20px;
+      min-height: 400px;
+    }
+    
+    .dark-theme-panel {
+      background: var(--primary-dark);
+      border: 1px solid var(--border-color);
+    }
+    
+    .light-theme-panel {
+      background: var(--secondary-dark);
+      border: 1px solid var(--border-color);
+    }
+    
+    .theme-title {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: var(--text-light);
+      text-align: center;
+    }
+    
+    .theme-elements {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .demo-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 15px;
+    }
+    
+    .demo-button {
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-steel));
+      color: var(--primary-dark);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-block;
+      width: fit-content;
+    }
+    
+    .demo-badge {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent-dark), var(--accent-blue));
+      color: white;
+      padding: 5px 15px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      background: linear-gradient(90deg, var(--accent-blue), var(--accent-steel));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    @media (max-width: 768px) {
+      .theme-demo {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Theme Demo - TheSteelDesigner.eu</h1>
+  
+  <div class="theme-demo">
+    <div class="theme-panel dark-theme-panel">
+      <div class="theme-title">Dark Theme</div>
+      <div class="theme-elements">
+        <div class="demo-card">
+          <h3>Card Title</h3>
+          <p>This is a sample card showing the dark theme styling.</p>
+          <button class="demo-button">Call to Action</button>
+        </div>
+        
+        <div>
+          <span class="demo-badge">Sample Badge</span>
+        </div>
+        
+        <div class="demo-card">
+          <h4>Feature List</h4>
+          <ul>
+            <li>Feature one</li>
+            <li>Feature two</li>
+            <li>Feature three</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="theme-panel light-theme-panel" data-theme="light">
+      <div class="theme-title">Light Theme</div>
+      <div class="theme-elements">
+        <div class="demo-card">
+          <h3>Card Title</h3>
+          <p>This is a sample card showing the light theme styling.</p>
+          <button class="demo-button">Call to Action</button>
+        </div>
+        
+        <div>
+          <span class="demo-badge">Sample Badge</span>
+        </div>
+        
+        <div class="demo-card">
+          <h4>Feature List</h4>
+          <ul>
+            <li>Feature one</li>
+            <li>Feature two</li>
+            <li>Feature three</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
